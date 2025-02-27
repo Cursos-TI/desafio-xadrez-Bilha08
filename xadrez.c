@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // Uso de recursividade para criar funções de repetição para o bispo, a torre e a rainha.
+//bispo
 void movBispo() {
     for (int i = 0; i < 5; i++) {
         printf("Cima\t");
@@ -9,7 +10,7 @@ void movBispo() {
         }
      } 
 }  
-
+//torre
 void movTorre(int mov) {
     if (mov > 0)  {
         printf("direita\n");
@@ -17,7 +18,7 @@ void movTorre(int mov) {
         movTorre(mov - 1 );
     }
 }  
-
+//rainha
 void MovRainha(int mov) {
     if (mov > 0)  {
         printf("Esquerda\n");
